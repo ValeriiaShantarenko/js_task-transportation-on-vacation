@@ -13,9 +13,7 @@ function calculateRentalCost(days) {
 
   if (days >= LONG_TERM) {
     cost = cost - LONG_DISCOUNT;
-  }
-
-  if (days >= MEDIUM_TERM && days < LONG_TERM) {
+  } else if (days >= MEDIUM_TERM && days < LONG_TERM) {
     cost = cost - MEDIUM_DISCOUNT;
   }
 
